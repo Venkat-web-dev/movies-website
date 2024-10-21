@@ -1,0 +1,111 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height:100vh;
+   background-image: url(image/background.img.jpg);
+   background-position:center;
+   background-size: cover;
+}
+.wrapper{
+    width: 420px;
+    background:transparent;
+    border: 2px solid grey;
+    backdrop-filter:blur(2px) ;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2,);
+    color: rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+}
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.wrapper .login-input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+    color: black;
+    border: black 1px solid;
+    border-radius: 30px;
+}
+.login-input input{
+    height:100%;
+    width: 100%;
+    background: transparent;    
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 60px 20px 20px;
+    color: rgb(20, 4, 4);
+}
+.login-input input::placeholder{
+    color: rgb(10, 10, 10);
+}
+.login-input i{
+    position: absolute;
+    right:20px ;
+    top: 20px;
+    font-size: 20px;
+
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px 2px;
+}
+.remember-forgot a{
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    transform: translateY(-2px);
+    text-decoration:underline;
+
+}
+
+.wrapper .btn{
+    width: 90%;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50px;
+    margin:10px 0 10px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgb(19, 18, 18);
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+}
+.wrapper .btn:hover{
+    transform: translatey(-2px);
+    transition: all linear 0.5s;
+}
+.wrapper .regiester{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.regiester p a {
+    color: rgb(16, 14, 14);
+    text-decoration: none;
+    margin-left: 5px;
+}
+.regiester p a:hover{
+    text-decoration: underline;
+}
