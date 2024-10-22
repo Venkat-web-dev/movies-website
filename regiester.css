@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(image/regiester.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid grey;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #efe9e9;
+    color: aliceblue;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+input::placeholder{
+    color: #000000;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #000000;
+    outline: none;
+    color: rgb(15, 15, 15);
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #0c0c0c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.log{
+    position: relative;
+    top: 20px;
+}
+.login{
+    width: 20px;
+    text-decoration: none;
+    color: #1104a5;
+    border-radius: 10px;
+    transition: all linear 0.3s;
+}
+.login:hover{
+    text-decoration: underline;
+    transform: translatey(-2px);
+}
+
